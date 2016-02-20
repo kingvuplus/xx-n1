@@ -1,0 +1,34 @@
+<screen name="MediaPortal" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="dblau">
+  <widget name="page_empty" position="30,148" size="26,26" zPosition="2" transparent="1" alphatest="on" />
+  <widget name="page_sel" position="30,148" size="26,26" zPosition="2" transparent="1" alphatest="on" />
+  <widget name="page" position="56,148" size="1148,30" shadowColor="black" shadowOffset="3,2" font="Regular2;24" backgroundColor="background" transparent="1" valign="center" halign="center" />
+  <widget name="tipps" position="56,79" size="1149,50" font="hdi;20" backgroundColor="dblau" foregroundColor="grey" transparent="1" valign="center" halign="center" zPosition="0" />
+  <ePixmap position="76,7" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,10" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,10" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,17" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <widget name="name" shadowColor="#000000" shadowOffset="3,2" position="287,13" size="561,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <ePixmap position="center,0" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="center,662" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="center,54" size="1280,616" zPosition="-4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,16" size="103,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,16" size="75,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,16" size="157,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <ePixmap pixmap="TechniHD/buttons/red.png" zPosition="4" position="32,678" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/green.png" zPosition="4" position="201,678" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/yellow.png" zPosition="4" position="371,678" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/blue.png" zPosition="4" position="546,678" size="40,40" alphatest="blend" />
+  <eLabel text="Proxy" position="63,678" size="133,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="green" position="232,678" size="137,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <eLabel text="Sort " position="404,678" size="138,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="blue" position="578,678" size="174,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <ePixmap pixmap="TechniHD/buttons/menu.png" zPosition="4" position="1092,678" size="60,40" alphatest="blend" />  
+  <ePixmap pixmap="TechniHD/buttons/plusminus.png" zPosition="4" position="1155,678" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/filelist.png" zPosition="4" position="1029,678" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/help.png" zPosition="4" position="965,678" size="80,40" alphatest="blend" />

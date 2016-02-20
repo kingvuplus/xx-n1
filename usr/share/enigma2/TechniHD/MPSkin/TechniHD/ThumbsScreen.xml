@@ -1,0 +1,31 @@
+<screen name="MediaPortal_Thumbs" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="dblau">
+  <ePixmap position="76,7" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,10" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,10" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,17" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <widget name="page" shadowColor="#000000" shadowOffset="3,2" position="287,13" size="561,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <ePixmap position="center,0" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="center,662" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="center,54" size="1280,616" zPosition="-4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,16" size="103,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,16" size="75,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,16" size="157,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <ePixmap pixmap="TechniHD/buttons/green.png" zPosition="4" position="32,678" size="40,40" alphatest="blend" />
+  <eLabel text="0" position="178,683" size="44,16" zPosition="6" font="Regular;18" halign="center" transparent="0" valign="center" backgroundColor="#676767" foregroundColor="black" />
+  <ePixmap pixmap="TechniHD/buttons/rewind.png" zPosition="4" position="170,677" size="61,33" alphatest="blend" />
+  <widget name="F2" position="63,679" size="107,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Exit" position="232,679" size="105,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <eLabel text="5" position="349,683" size="44,16" zPosition="6" font="Regular;18" halign="center" transparent="0" valign="center" backgroundColor="#676767" foregroundColor="black" />
+  <ePixmap pixmap="TechniHD/buttons/rewind.png" zPosition="4" position="341,677" size="61,33" alphatest="blend" />
+  <eLabel text="Cover / List Mode" position="404,679" size="194,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />  
+  <ePixmap pixmap="TechniHD/buttons/infobutton.png" zPosition="8" position="617,678" size="36,40" alphatest="blend" />
+  <eLabel text="TMDB / IMDB" position="650,679" size="194,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <ePixmap pixmap="TechniHD/buttons/plusminus.png" zPosition="4" position="1155,678" size="80,40" alphatest="blend" />
+  <widget name="Thumb" position="970,675" size="90,36" backgroundColor="#26181d20" transparent="1" font="hdi;18" valign="center" foregroundColor="#00ffffff" zPosition="7" />
+  <widget name="thumb" position="1063,675" size="70,36" backgroundColor="#26181d20" transparent="1" font="hdi;18" valign="center" foregroundColor="#00ffffff" zPosition="7" />  

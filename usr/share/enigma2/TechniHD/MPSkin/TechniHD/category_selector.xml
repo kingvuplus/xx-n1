@@ -1,0 +1,25 @@
+<screen name="CategorySelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="dblau">
+  <ePixmap position="76,7" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,10" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,10" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,17" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <eLabel text="Genre" shadowColor="#000000" shadowOffset="3,2" position="287,13" size="561,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <ePixmap position="0,0" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,662" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="0,54" size="1280,616" zPosition="-4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,16" size="103,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,16" size="75,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,16" size="157,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget name="F1" position="531,197" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F2" position="531,245" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F3" position="531,293" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F4" position="531,341" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F5" position="531,389" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F6" position="531,437" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />
+  <widget name="F7" position="531,485" size="218,38" transparent="1" font="Regular;18" backgroundColor="#26181d20" foregroundColor="#00ffffff" valign="center" halign="center" zPosition="2" />

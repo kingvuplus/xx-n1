@@ -1,0 +1,115 @@
+<screen name="SimplePlayer" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <widget position="90,601" size="150,80" zPosition="6" alphatest="blend" transparent="1" name="Icon" />
+    <widget name="Cover" position="1082,341" size="146,193" zPosition="2" alphatest="blend" />
+    <widget name="spcoverframe" position="1075,333" size="160,210" zPosition="1" pixmap="~/simpleplayer/spcoverframe.png" />
+    <widget name="spcoverfg" position="1075,333" size="160,210" zPosition="3" pixmap="~/simpleplayer/spcoverfg.png" alphatest="blend" />
+    <ePixmap position="0,600" zPosition="-1" size="1280,84" pixmap="/usr/share/enigma2/TechniHD/infobar_default.png" />
+    <widget source="global.CurrentTime" render="Label" position="1115,52" zPosition="3" size="70,25" font="Regular2;20" valign="top" halign="center" backgroundColor="dblau" alphatest="blend" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel position="1114,44" size="73,42" zPosition="2" backgroundColor="dblau" />
+    <eLabel position="1113,43" size="75,44" zPosition="1" backgroundColor="grey" />   
+    <widget source="session.CurrentService" render="Label" position="255,642" size="948,37" font="Regular; 30" valign="center" backgroundColor="background" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <eLabel position="center,558" size="1280,42" zPosition="-1" backgroundColor="ddblau" />
+    <widget source="session.CurrentService" render="Label" backgroundColor="hblau" transparent="1" position="324,606" size="96,27" font="Regular2;21" halign="left">
+      <convert type="THDServiceEndTime">EndTime</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="hblau" transparent="1" position="224,606" size="96,27" font="Regular2;21" halign="right">
+      <convert type="THDServiceStartTime">StartTime</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="ddblau" position="249,565" size="96,27" font="Regular;22" halign="right">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="ddblau" position="926,565" size="99,27" font="Regular;22" halign="left">
+      <convert type="ServicePosition">Length,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="ddblau" position="1105,565" size="99,27" font="Regular2;19" halign="right">
+      <convert type="ServicePosition">Remaining,Negate</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" font="Regular; 17" position="1110,610" size="55,21" halign="right" backgroundColor="hblau" transparent="1" foregroundColor="white">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" font="Regular; 15" position="1167,611" size="10,18" halign="center" backgroundColor="hblau" transparent="1" foregroundColor="white" />
+    <widget source="session.CurrentService" render="Label" font="Regular; 17" position="1179,610" size="55,21" halign="left" backgroundColor="hblau" transparent="1" foregroundColor="white">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <widget backgroundColor="un9b9ca1" source="session.CurrentService" render="Progress" position="350,575" size="568,9" zPosition="4" pixmap="TechniHD/p_bar.png">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget source="session.CurrentService" render="PositionGauge" position="350,575" size="568,9" zPosition="5" transparent="1">
+    <convert type="MPServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="L" position="919,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">AudioLanguage</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="H" position="823,599" zPosition="4" size="57,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">AudioDescription</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" position="1021,611" size="40,23" zPosition="3" font="Regular;2" valign="top" halign="right" backgroundColor="#436fa1" transparent="0" foregroundColor="#436fa1">
+  <convert type="ServiceInfo">IsMultichannel</convert>
+  <convert type="ConditionalShowHide">
+  </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="F" position="1013,599" zPosition="4" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="J" position="1013,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">AudioStereo</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="K" position="1060,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">NotWidescreen</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" position="1072,613" size="37,23" zPosition="3" font="Regular;2" valign="top" halign="right" backgroundColor="#436fa1" transparent="0" foregroundColor="#436fa1">
+  <convert type="THDPremiumInfo">IsWidescreen</convert>
+  <convert type="ConditionalShowHide">
+  </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="B" position="1060,599" zPosition="3" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="I" position="1060,599" zPosition="5" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">1280,1920</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="W" position="966,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">HD1080p</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+ <widget source="session.CurrentService" render="FixedLabel" text="V" position="966,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">HD1080i</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="U" position="966,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">HD720p</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+ <widget source="session.CurrentService" render="FixedLabel" text="T" position="966,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">HD720i</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <widget source="session.CurrentService" render="FixedLabel" text="9" position="873,599" zPosition="2" size="54,41" font="symbol;40" valign="top" halign="right" backgroundColor="dblau" transparent="1">
+    <convert type="THDPremiumInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+</screen>

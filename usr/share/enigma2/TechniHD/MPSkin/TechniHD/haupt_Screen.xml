@@ -1,0 +1,37 @@
+<screen name="MediaPortal" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <!--widget name="title" shadowColor="#000000" shadowOffset="1,1" noWrap="0" position="171,88" size="40,20" backgroundColor="#00214566" transparent="1" zPosition="5" font="hdi; 13" valign="top" halign="right" foregroundColor="#ffd200" /-->
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <ePixmap position="0,48" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="0,102" size="1280,516" zPosition="-2" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget name="Mediatheken" position="66,119" size="260,25" backgroundColor="hblau" zPosition="5" shadowColor="black" shadowOffset="3,2" foregroundColor="#ffd200" font="hdi; 22" halign="center" transparent="0" />
+  <widget name="mediatheken" position="66,150" size="260,440" backgroundColor="dblau" scrollbarMode="showOnDemand" transparent="1" zPosition="5" />
+  <widget name="Grauzone" position="351,119" size="260,25" backgroundColor="hblau" zPosition="5" shadowColor="black" shadowOffset="3,2" foregroundColor="#ffd200" font="hdi; 22" halign="center" transparent="0" />
+  <widget name="grauzone" position="351,150" size="260,440" backgroundColor="dblau" scrollbarMode="showOnDemand" transparent="1" zPosition="5" />
+  <widget name="Funsport" position="639,119" size="260,25" backgroundColor="hblau" zPosition="5" shadowColor="black" shadowOffset="3,2" foregroundColor="#ffd200" font="hdi; 22" halign="center" transparent="0" />
+  <widget name="funsport" position="639,150" size="260,440" backgroundColor="dblau" scrollbarMode="showOnDemand" transparent="1" zPosition="5" />
+  <widget name="Porn" position="924,119" size="260,25" backgroundColor="hblau" zPosition="5" shadowColor="black" shadowOffset="3,2" foregroundColor="#ffd200" font="hdi; 22" halign="center" transparent="0" />
+  <widget name="porn" position="924,149" size="260,440" backgroundColor="dblau" scrollbarMode="showOnDemand" transparent="1" zPosition="5" />
+  <widget name="name" shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <widget name="red" position="1065,636" size="120,26" zPosition="4" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Adult" position="937,636" size="90,26" zPosition="4" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="SimpelList" position="455,636" size="120,26" zPosition="4" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Setup" position="243,636" size="136,26" zPosition="4" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <ePixmap pixmap="TechniHD/buttons/red.png" zPosition="4" position="1028,634" size="32,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/infobutton.png" zPosition="4" position="901,634" size="32,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/help.png" zPosition="4" position="63,634" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/menu.png" zPosition="4" position="177,634" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/filelist.png" zPosition="4" position="388,634" size="80,40" alphatest="blend" />
+</screen>

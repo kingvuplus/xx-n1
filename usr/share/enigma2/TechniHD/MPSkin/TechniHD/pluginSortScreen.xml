@@ -1,0 +1,24 @@
+<screen name="pluginSort" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="dblau">
+  <ePixmap position="76,7" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,10" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,10" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,17" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <eLabel text="User Plugin Sort" shadowColor="#000000" shadowOffset="3,2" position="287,13" size="561,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <ePixmap position="center,0" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="center,662" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="center,54" size="1280,616" zPosition="-4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,16" size="103,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,16" size="75,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,16" size="157,44" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <eLabel position="184,92" size="892,544" zPosition="-3" backgroundColor="grey" />
+  <eLabel position="185,93" size="890,542" zPosition="-2" backgroundColor="dblau" />
+  <widget name="config2" foregroundColorSelected="dblau" position="192,100" itemHeight="35" alphatest="blend" size="876,527" zPosition="5" transparent="1" enableWrapAround="1" foregroundColor="white" backgroundColor="dblau" scrollbarMode="showOnDemand" />
+  <ePixmap pixmap="TechniHD/buttons/ok.png" zPosition="4" position="196,678" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/exit.png" zPosition="4" position="1010,678" size="60,40" alphatest="blend" />
+</screen>

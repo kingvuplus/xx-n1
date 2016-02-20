@@ -1,0 +1,33 @@
+<screen name="defaultGenre" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">   
+  <widget name="ContentTitle" position="181,119" size="899,26" zPosition="5" font="hdi;18" backgroundColor="dblau" foregroundColor="grey" transparent="1" halign="center" />  
+  <widget name="name" shadowColor="black" shadowOffset="3,2" position="181,150" zPosition="5" size="899,40" font="Regular; 20" backgroundColor="background" transparent="1" halign="center" />
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <ePixmap position="0,48" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="170,142" size="912,2" zPosition="6" backgroundColor="grey" />
+  <eLabel position="0,102" size="1280,516" zPosition="2" backgroundColor="dblau" />
+  <eLabel position="171,197" size="920,401" zPosition="3" backgroundColor="grey" />
+  <eLabel position="172,198" size="918,399" zPosition="4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <widget name="title" shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <widget name="liste" foregroundColorSelected="dblau" selectionPixmap="TechniHD/menu/sel1280x40.png" position="181,201" itemHeight="28" alphatest="blend" size="900,394" zPosition="5" transparent="1" enableWrapAround="1" foregroundColor="white" backgroundColor="dblau" scrollbarMode="showOnDemand" />
+  <ePixmap pixmap="TechniHD/buttons/red.png" zPosition="4" position="97,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/green.png" zPosition="4" position="309,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/yellow.png" zPosition="4" position="514,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/blue.png" zPosition="4" position="729,634" size="40,40" alphatest="blend" />
+  <widget name="F1" position="135,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F2" position="342,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F3" position="546,636" size="181,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F4" position="763,636" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+</screen>

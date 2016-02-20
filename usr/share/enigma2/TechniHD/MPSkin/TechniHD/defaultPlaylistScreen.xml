@@ -1,0 +1,58 @@
+<screen name="defaultPlaylist" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <widget name="title" shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <ePixmap position="0,48" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="75,126" size="569,472" zPosition="6" backgroundColor="dblau" />  
+  <eLabel position="0,102" size="1280,516" zPosition="2" backgroundColor="dblau" />
+  <eLabel position="73,124" size="573,476" zPosition="3" backgroundColor="grey" />
+  <eLabel position="696,297" size="517,300" zPosition="6" backgroundColor="ddblau" />
+  <eLabel position="694,295" size="521,305" zPosition="5" backgroundColor="grey" />    
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>    
+  <widget name="coverArt" position="1033,122" size="180,171" pixmap="skin_default/no_coverArt.png" transparent="1" alphatest="blend" zPosition="5" />
+  <widget name="songtitle" position="790,337" size="414,25" font="Regular2; 20" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="7" />
+  <widget name="artist" position="790,307" size="414,25" font="Regular2; 20" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="7" />
+  <widget name="album" position="790,367" size="414,25" font="Regular2;20" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="7" />  
+  <widget name="playmode" position="790,429" size="414,25" font="Regular2;20" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="7" />  
+  <eLabel position="500,411" size="720,2" backgroundColor="grey" />  
+  <eLabel position="71,140" size="388,2" backgroundColor="grey" />
+  <widget name="streamlist" position="79,128" size="559,469" selectionPixmap="TechniHD/menu/sel1280x40.png" alphatest="blend" itemHeight="36" zPosition="8" transparent="1" enableWrapAround="1" foregroundColor="white" backgroundColor="hblau" scrollbarMode="showOnDemand" />  
+  <widget source="session.CurrentService" render="Label" position="702,509" size="90,25" font="Regular;22" halign="right" backgroundColor="background" foregroundColor="white" transparent="1" zPosition="7">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="790,398" size="414,25" font="Regular2;22" halign="left" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="7">
+    <convert type="ServicePosition">Length</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Progress" position="808,514" size="289,12" backgroundColor="background" borderWidth="2" borderColor="grey" transparent="1" zPosition="7">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1113,509" size="90,25" font="Regular;22" halign="left" backgroundColor="background" foregroundColor="white" transparent="1" zPosition="7">
+    <convert type="ServicePosition">Remaining</convert>
+  </widget>
+  <eLabel text="Artist" font="hd; 15" backgroundColor="background" position="700,307" size="82,25" zPosition="7" transparent="1" valign="center" halign="left" />
+  <eLabel text="Album" font="hd; 15" backgroundColor="background" position="700,367" size="82,25" zPosition="7" transparent="1" valign="center" halign="left" />  
+  <eLabel text="Playmode" font="hd; 15" backgroundColor="background" position="700,429" size="82,25" zPosition="7" transparent="1" valign="center" halign="left" />
+  <eLabel text="Title" font="hd; 15" backgroundColor="background" position="700,337" size="82,25" zPosition="7" transparent="1" valign="center" halign="left" />
+  <eLabel text="length" font="hd; 15" backgroundColor="background" position="700,398" size="82,25" zPosition="7" transparent="1" valign="center" halign="left" />  
+  <ePixmap pixmap="TechniHD/buttons/menu.png" zPosition="4" position="1109,634" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/plusminus.png" zPosition="4" position="999,634" size="80,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/red.png" zPosition="4" position="97,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/green.png" zPosition="4" position="309,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/yellow.png" zPosition="4" position="514,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/blue.png" zPosition="4" position="729,634" size="40,40" alphatest="blend" />
+  <widget name="F1" position="135,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F2" position="342,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F3" position="546,636" size="181,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <widget name="F4" position="763,636" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+</screen>

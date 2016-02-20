@@ -1,0 +1,26 @@
+<screen name="MediaPortal_Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">   
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <ePixmap position="0,48" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />  
+  <eLabel position="0,102" size="1280,516" zPosition="2" backgroundColor="dblau" />
+  <eLabel position="171,120" size="920,478" zPosition="3" backgroundColor="grey" />
+  <eLabel position="172,121" size="918,476" zPosition="4" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <widget name="title" shadowColor="#000000" shadowOffset="3,2" noWrap="0" position="287,63" size="268,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="right" valign="center" transparent="1" />
+  <widget name="config" foregroundColorSelected="dblau" selectionPixmap="TechniHD/menu/sel1280x40.png" position="181,127" itemHeight="35" alphatest="blend" size="900,464" zPosition="5" transparent="1" enableWrapAround="1" foregroundColor="white" backgroundColor="dblau" scrollbarMode="showOnDemand" />
+  <ePixmap pixmap="TechniHD/buttons/ok.png" zPosition="4" position="97,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/exit.png" zPosition="4" position="309,634" size="60,40" alphatest="blend" />
+  <eLabel text="Save" position="135,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Exit" position="379,637" size="164,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+</screen>

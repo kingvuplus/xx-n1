@@ -1,0 +1,37 @@
+<screen name="VirtualKeyBoardExt" position="center,center" size="1280,720" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent">
+  <widget source="country" render="Pixmap" position="38,56" zPosition="4" size="60,40" alphatest="on" borderWidth="2" borderColor="yellow">
+	<convert type="ValueToPixmap">LanguageCode</convert>
+  </widget>
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <eLabel text="Keyboard" shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <widget name="header" position="35,109" zPosition="5" size="1181,40" font="Regular;28" halign="center" transparent="0" noWrap="1" />
+  <eLabel position="36,157" size="1182,47" zPosition="4" backgroundColor="ddblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <ePixmap position="0,44" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="0,102" size="1280,516" zPosition="-2" backgroundColor="dblau" />
+  <eLabel position="20,224" size="571,255" zPosition="4" backgroundColor="grey" />
+  <eLabel position="24,228" size="563,247" zPosition="5" backgroundColor="dblau" />  
+  <eLabel position="36,204" size="1182,1" zPosition="10" backgroundColor="grey" />
+  <widget name="text" position="37,157" zPosition="9" size="1179,46" font="Regular;38" transparent="0" noWrap="1" halign="right" backgroundColor="ddblau" />
+  <widget name="list" position="34,237" zPosition="7" size="540,225" selectionDisabled="1" transparent="1" itemHeight="45" />
+  <widget name="captcha" position="733,382" size="300,200" transparent="1" alphatest="on" />
+  <ePixmap pixmap="TechniHD/buttons/red.png" zPosition="4" position="97,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/green.png" zPosition="4" position="266,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/yellow.png" zPosition="4" position="440,634" size="40,40" alphatest="blend" />
+  <ePixmap pixmap="TechniHD/buttons/blue.png" zPosition="4" position="612,634" size="40,40" alphatest="blend" />
+  <eLabel text="Delete" position="135,637" size="133,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="OK/Enter" position="303,637" size="137,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <eLabel text="Keyboard" position="479,637" size="138,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="to shift" position="650,637" size="174,26" zPosition="4" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+</screen>

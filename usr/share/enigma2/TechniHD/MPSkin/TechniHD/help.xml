@@ -1,0 +1,20 @@
+<screen name="HelpScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">   
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <ePixmap position="0,48" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />  
+  <eLabel position="0,102" size="1280,516" zPosition="2" backgroundColor="dblau" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <eLabel text="help..." shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <eLabel text="Mit der MENÜ Taste könnt ihr im Hauptmenü einstellen welche Plugins angezeigt werden. Default PINCODE  '0000'. Eine Seite blättern mit den beiden 'Bouquet Tasten (CH oder P (+/-)' ist immer dann möglich wenn 'Page: 1' in einem Plugin auftaucht.&#xD;&#xA;Es gibt immer eine goldene Regel bei Streams.&#xD;&#xA;1. Sollte der Stream starten aber das Bild bleibt dunkel, dann bitte ein paar Sekunden länger abwarten&#xD;&#xA;    oder den Stream am PC überprüfen ob dieser dort läuft.&#xD;&#xA;2. Wenn der Stream zwischendurch stockt, merke dir den Zeitpunkt und stoppe den Stream, starte ihn erneut &#xD;&#xA;    und spule zum Zeitpunkt vor (mit der Seekbar funktioniert das bestens).&#xD;&#xA;3. Startet der MediaPlayer gar nicht, dann liegt es wohl am Plugin.&#xD;&#xA;4. Abends sind die Streamserver immer überlastet und man kann mit Bildhängern rechnen!&#xD;&#xA;5. Stockt ein Stream, ist vermutlich der Streamhoster überlastet, der Fehler liegt nicht beim Plugin.&#xD;&#xA;6. Wenn die Inhalte nicht abgespielt werden und der MoviePlayer 'Wiedergabe beenden' anzeigt, &#xD;&#xA;     bitte 'Nein, aber von Anfang an neu beginnen' auswählen.&#xD;&#xA;&#xD;&#xA;MediaPortal Team  " shadowColor="black" shadowOffset="3,2" position="62,124" zPosition="5" size="1162,478" font="Regular2; 20" backgroundColor="background" transparent="1" halign="left" valign="center" />
+</screen>

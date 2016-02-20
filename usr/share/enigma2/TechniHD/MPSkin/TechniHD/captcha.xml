@@ -1,0 +1,27 @@
+<screen name="Captcha" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="76,57" zPosition="4" size="56,46" pixmap="TechniHD/menu/internet-logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Media" shadowColor="#000000" shadowOffset="2,1" position="122,60" size="67,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffffff" valign="center" halign="right" zPosition="6" />
+  <eLabel text="Portal" shadowColor="#000000" shadowOffset="2,1" position="189,60" size="70,39" transparent="1" font="hd; 21" backgroundColor="#00214566" foregroundColor="#00ffd200" valign="center" halign="left" zPosition="6" />
+  <eLabel shadowColor="#000000" shadowOffset="3,2" position="258,67" zPosition="5" size="26,27" font="Console;27" backgroundColor="background" transparent="1" text="&gt;" valign="top" halign="left" />
+  <eLabel text="Captcha..." shadowColor="#000000" shadowOffset="3,2" position="287,63" size="520,33" zPosition="6" font="Regular; 25" backgroundColor="background" halign="left" valign="center" transparent="1" />
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="1080,57" size="103,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="862,57" size="75,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">ShortDay</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" shadowColor="black" shadowOffset="3,2" zPosition="5" position="937,57" size="157,50" font="Regular; 28" halign="right" backgroundColor="background" transparent="1">
+    <convert type="THDClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget name="header" position="34,127" zPosition="4" size="539,40" font="Regular;28" halign="center" transparent="1" noWrap="1" />
+  <eLabel position="36,209" size="536,47" zPosition="4" backgroundColor="ddblau" />
+  <ePixmap position="0,44" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <ePixmap position="0,618" zPosition="3" size="1280,59" pixmap="TechniHD/menu/borderlong.png" transparent="1" />
+  <eLabel position="0,102" size="1280,516" zPosition="2" backgroundColor="dblau" />
+  <eLabel position="20,191" size="571,323" zPosition="4" backgroundColor="grey" />
+  <eLabel position="24,195" size="563,315" zPosition="5" backgroundColor="dblau" />
+  <ePixmap pixmap="skin_default/vkey_text.png" zPosition="8" position="34,207" size="542,52" alphatest="on" />
+  <widget name="text" position="37,208" zPosition="9" size="536,46" font="Regular;38" transparent="0" noWrap="1" halign="right" backgroundColor="ddblau" />
+  <widget name="list" position="34,274" zPosition="7" size="540,225" selectionDisabled="1" transparent="1" />
+  <widget name="coverArt" position="734,129" zPosition="7" size="450,450" transparent="1" alphatest="blend" />
+</screen>
